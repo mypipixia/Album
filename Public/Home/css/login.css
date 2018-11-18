@@ -1,0 +1,65 @@
+html body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/login/pexels-photo-196652.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login-border{
+    background-color: #fdfffe;
+    background-image: url("../images/login/ac二维码.png");
+    background-repeat: no-repeat;
+    background-position: right -5px;
+    border-radius: 10px;
+    opacity: 0.93;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.one{
+    z-index: 2;
+}
+.two{
+    opacity: 0;
+    left: 10%;
+}
+.login-img{
+    margin-top: 64px;
+    margin-bottom: 65px;
+}
+.login-img>img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.pass{
+    font-size: 12px;
+    width: 20px;
+}
+.pass-a{
+    text-decoration: underline;
+    float: right;
+    color: #000000;
+}
+.login-right{
+    float: right;
+    color: #672e99;
+    text-decoration: underline;
+    margin-top: 105px;
+    margin-bottom: 5px;
+}
+.login-input input{
+    border-radius: 0;
+    border: solid 1px #742f99;
+    margin-bottom: 20px;
+}
+.login-btn{
+    background: linear-gradient(to right,#37238D,#8D3099);
+    letter-spacing: 0;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.login-btn:hover{
+    color: #ffffff;
+}

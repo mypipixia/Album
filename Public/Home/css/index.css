@@ -1,0 +1,354 @@
+.all{
+    min-width: 1100px;
+}
+header{
+    width: 100%;
+    border-bottom: 3px solid #ae5da1;
+    position: absolute;
+    top: 0;
+}
+#seach{
+    color: white;
+}
+a:link,a:hover{
+    text-decoration: none;
+}
+.header-form{
+    margin-left: 20%;
+}
+.header-form{
+    margin-top: 23px;
+}
+.header-form input{
+    border-radius: 3px;
+    border: solid 1px #ad5da1;
+    background: none;
+}
+.header-img{
+    line-height: 90px;
+}
+.header-img img{
+    vertical-align: middle;
+}
+.kinds{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.kinds-content{
+    margin: 0;
+    padding: 0;
+}
+.kinds-content li{
+    list-style: none;
+    float: left;
+    width: 20%;
+    height:50px;
+    border: 1px solid #EEEEEE;
+    text-align: center;
+    line-height: 50px;
+}
+.kinds-content{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fdfffe;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+    font-size: 120%;
+}
+.kinds-content a{
+    color: black;
+}
+.btns{
+    background-color: #ae5da1;
+    border: none;
+    cursor: pointer;
+}
+.navs-left>a{
+    display: block;
+    color: whitesmoke;
+    flex: 1;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+.navs-left>a:hover{
+    background: linear-gradient(to right,#37238D,#8D3099);
+}
+.xiala{
+    transition:transform 0.5s;
+}
+.navs-left>a:hover .xiala{
+    transform: rotateZ(180deg);
+}
+.navs-left>a:link,.navs-left>a:hover{
+    text-decoration: none;
+}
+.navs-left{
+    float: left;
+    width: 40%;
+    display: flex;
+}
+.navs-right{
+    float: right;
+    display: flex;
+    width: 30%;
+}
+.navs-right a{
+    display: block;
+    margin: 0 auto;
+    color: white;
+    padding: 5px;
+}
+.li{
+    transform: rotateZ(180deg);
+}
+/*!*内容*!-----
+----------------------------------------*/
+.all-flag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.6;
+    display: inline-block;
+}
+#shoping{
+    position: absolute;
+    width: 110px;
+    height: 32px;
+    border: solid 1px #fdfffe;
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+}
+.shoping:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.shoping:link{
+    color: #ffffff;
+}
+.shoping:visited{
+    color: #FFFFFF;
+}
+
+.content{
+    width: 100%;
+    background-image: url("../images/index/底板.png");
+}
+.content-title{
+    height: 240px;
+    width: 100%;
+    background-color: #fdfffe;
+    background-image: url("../images/index/NEWPRODUCTS.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.font{
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 135px;
+    text-align: center;
+}
+.video{
+    height: 551px;
+    width: 100%;
+    position: relative;
+}
+.imglist{
+    width: 920px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+.imglist a{
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    width: 100%;
+   text-align: right;
+    padding-right: 4%;
+}
+.bgimg img{
+    width: 100%;
+}
+.bgimg{
+    width: 31%;
+    float: left;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: whitesmoke;
+    position: relative;
+    cursor: pointer;
+}
+.shade{
+    position: absolute;
+    background-color: black;
+    opacity:0.5;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+ #shadeimg{
+    position: absolute;
+    width: 73px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+}
+ .allhotimg{
+     width: 1100px;
+     height: 100%;
+     margin: 0 auto;
+     position: relative;
+ }
+.hot{
+    width: 1040px;
+    height: 336px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+.hot ul li{
+    float: left;
+    list-style: none;
+    width: 240px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+.hot ul li img{
+    width: 100%;
+}
+.hot ul{
+    margin: 0;
+    padding: 0;
+    height: 336px;
+    position: absolute;
+}
+
+.allhotimg span{
+    display: block;
+    width: 40px;
+    height: 90px;
+    background-color: #fdfffe;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    line-height: 90px;
+    text-align: center;
+}
+.allhotimg span img{
+    vertical-align: middle;
+}
+.allhotimg span:nth-of-type(1){
+    left: 0;
+}
+.allhotimg span:nth-of-type(2){
+    right: 0;
+}
+.hot a{
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    width: 100%;
+    text-align: right;
+    padding-right: 12px;
+}
+
+footer{
+    background: #010101;
+    width: 100%;
+}
+.footer-top{
+    padding-top: 34px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #ae5da1;
+}
+.footer-top span{
+    font-weight: bold;
+    color: #fffefe;
+}
+.col-xs-2 .text-danger{
+    color: #ee0011;
+    font-weight: normal;
+}
+.footer-main{
+    margin-top: 36px;
+    display: flex;
+}
+.cols{
+   flex: 1;
+    text-align: center;
+}
+.cols:nth-of-type(1){
+    flex: 0.75;
+    text-align: left;
+}
+.cols:nth-of-type(6){
+    flex: 0.75;
+    text-align: right;
+ }
+.footer-main ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.footer-main ul li:nth-of-type(1){
+    letter-spacing: 1px;
+    color: #fffefe;
+    font-weight: bold;
+}
+.footer-main ul{
+    margin: 0;
+    padding: 0;
+}
+.footer-main ul li a{
+    letter-spacing: 1px;
+    color: #fffefe;
+    opacity: 0.5;
+}
+.footer-main ul li a:hover{
+    opacity: 1;
+}
+footer{
+    position: relative;
+}
+footer p{
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fffefe;
+    margin-top: 64px;
+    margin-bottom: 18px;
+}
+.ac{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+}
+.ac ul li{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.ac ul li span{
+    color: #ffffff;
+}

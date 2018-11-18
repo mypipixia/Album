@@ -1,0 +1,323 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品管理</title>
+    <link rel="stylesheet" href="/toshop/Public/Lib/css/bootstrap.css">
+    <script src="/toshop/Public/Lib/js/jquery-1.10.2.min.js"></script>
+    <script src="/toshop/Public/Lib/js/bootstrap.min.js"></script>
+    <style>
+        .table th{
+            text-align: center;
+        }
+        .table td{
+            text-align: center;
+        }
+        .table a:hover{
+            text-decoration: none;
+        }
+
+
+        div.page1 {
+            margin-top: 20px;
+            margin-right: 10px;
+            float: right;
+            color: #666;
+        }
+
+        div.page1 span.current , div.page1 a{
+            border: 1px solid #dcdcdc;
+            display: block;
+            float: left;
+            font-size: 12px;
+            margin-right: 5px;
+            padding: 3px 10px;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+        div.page1 span.current{
+            background: #ff5c5c none repeat scroll 0 0 !important;
+            border-color: #ff5c5c;
+            color: #ffffff !important;
+            display: block;
+            float: left;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        div.page1 a.prev,div.page1 a.next{
+            padding: 3px 4px;
+        }
+        .table > thead > tr > th,
+        .table > tbody > tr > td,
+        .table > tfoot > tr > td{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+
+
+        <div class="modal fade" id="myModaltwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <p>操作栏</p>
+                    </div>
+                    <div class="modal-body">
+                        <form  id="forms" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label>类别名:</label>
+                                <input class="form-control" id="kindname" type="text" name="kindname" autocomplete="off">
+                                <input type="hidden" name="kindid" id="kindid">
+                            </div>
+                            <div class="form-group">
+                                <label>类别简介:</label>
+                                <textarea class="form-control" id="kindtitle" name="kindtitle" rows="6" style="resize: none"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-md-6 col-lg-offset-3">
+                                    <div class="thumbnail">
+                                        <img id="kindimg" style="max-width: 100%"  alt="类别logo">
+                                        <input type="hidden" name="kindimg" id="tokindimg">
+                                        <div class="caption">
+                                            <h3>logo</h3>
+                                            <input type="file" name="kindimgs" id="kindimgs">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="btns">确认</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <h3 class="modal-body text-center contents">删除成功</h3>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+
+        <div class="panel">
+            <div class="panel-heading panel-default">
+                <input type="button" class="btn btn-warning" value="添加类别" id="addkinds">
+                <input type="button" class="btn btn-danger" value="删除类别" id="delkind">
+            </div>
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" name="chex" id="chex"> <label for="chex" style="cursor: pointer">全选</label>
+                    </th>
+                    <th>
+                        类别名称
+                    </th>
+                    <th>
+                        类别简介
+                    </th>
+                    <th>logo</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php if(is_array($arr)): $i = 0; $__LIST__ = $arr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                        <td class="kindid">
+                            <input type="checkbox" name="kindid" value="<?php echo ($vo["kindid"]); ?>">
+                        </td>
+                        <td class="kindname">
+                            <?php echo ($vo["kindname"]); ?>
+                        </td>
+                        <td class="kindtitle">
+                            <?php echo ($vo["kindtitle"]); ?>
+                        </td>
+                        <td style="cursor: pointer" class="kindimg">
+                            <img src="/toshop/<?php echo ($vo["kindimg"]); ?>" style="max-width: 100%">
+                            <input type="hidden" value="<?php echo ($vo["kindimg"]); ?>">
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-info update">修改</a>
+                            <a href="#" data-id="<?php echo ($vo["kindid"]); ?>" class="btn btn-success del">删除</a>
+                        </td>
+                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                </tbody>
+            </table>
+                <div class="page1">
+                    <?php echo ($page); ?>
+                </div>
+        </div>
+
+</body>
+</html>
+<script>
+
+    window.onload=function()
+    {
+        var myform=document.getElementById("forms");
+        myform.onkeypress=function(ev)
+        {
+            var ev=window.event||ev;
+            if(ev.keyCode==13||ev.which==13)
+            {
+                return false;
+            }
+        }
+    };
+
+
+
+    $(function () {
+        var fal = true;
+        //添加
+        $('#addkinds').click(function () {
+            $('#kindname').val("");
+            $('#kindid').val("");
+            $('#kindtitle').val("");
+            $('#kindimg').attr("src","");
+            $('#myModaltwo').modal('show');
+            fal = true;
+        });
+
+        //logo
+        $('#kindimgs').change(function(){
+           let file = this.files[0] ;
+           let ready = new FileReader();
+           ready.readAsDataURL(file);
+           ready.onload = function () {
+               $('#kindimg').attr('src',ready.result)
+           }
+        });
+
+        //修改
+        $('.update').click(function () {
+            fal = false;
+           var name = $(this).parent().prevAll('.kindname').text().trim();
+           var kindid = $(this).parent().prevAll('.kindid').children().val();
+           var title =  $(this).parents().prevAll('.kindtitle').text().trim();
+           var img =  $(this).parents().prevAll('.kindimg').children('input').val();
+            $('#kindname').val(name);
+            $('#kindid').val(kindid);
+            $('#kindtitle').val(title);
+            $('#tokindimg').val(img);
+            $('#kindimg').attr('src',"/toshop/"+img);
+            $('#myModaltwo').modal('show');
+        });
+
+        $('#btns').click(function () {
+            var name = $('#kindname').val();
+            var id = $('#kindid').val();
+            if (fal){
+                $.ajax({
+                    type:'POST',
+                    url:'/toshop/index.php/admin/kind/chac',
+                    data:'kindname='+name,
+                    success(msg){
+                        if (msg==1){
+                            $('.contents').text(`你输入的类名 ${name} 已存在`);
+                            $('#myModal').modal('show');
+                        } else {
+                            $('#forms').attr({
+                                action:'/toshop/index.php/admin/kind/toaddkind'
+                            });
+                            $('#forms').submit();
+                        }
+                    }
+                });
+            }else {
+                $.ajax({
+                    type:'POST',
+                    url:'/toshop/index.php/admin/kind/kindname',
+                    data:'kindname='+name+'&kindid='+id,
+                    success(msg){
+                        if (msg==1){
+                            $('.contents').text(`你输入的类名 ${name} 已存在`);
+                            $('#myModal').modal('show');
+                        } else {
+                            $('#forms').attr({
+                                action:'/toshop/index.php/admin/kind/upkind'
+                            });
+                            $('#forms').submit();
+                        }
+                    }
+                });
+            }
+        });
+
+        $('[name="chex"]').click(function () {
+            if ($(this).prop('checked')) {
+                $('[name="kindid"]').prop('checked',true)
+            } else {
+                $('[name="kindid"]').prop('checked',false)
+            }
+        });
+
+        //单点删除
+        $('.del').click(function () {
+           var id = this.dataset.id;
+           var dela = this.parentElement.parentElement;
+           $.ajax({
+               type:'post',
+               url:'/toshop/index.php/admin/kind/del',
+               data:'id='+id,
+               dataType:'JSON',
+               success(msg){
+                   if (msg==1){
+                       $('#myModal').modal('show');
+                       $('.contents').text('删除成功');
+                       dela.style.display = 'none';
+                   } else {
+                       $('#myModal').modal('show');
+                       $('.contents').text('删除失败');
+                   }
+               }
+           })
+        });
+
+
+         $('body').on('click','#delkind',function () {
+             var list = $('[name="kindid"]');
+             var data = [];
+             list.each(function (index,e) {
+                 if (e.checked){
+                     data.push(parseInt(e.value));
+                 }
+             }) ;
+             data = JSON.stringify(data);
+             if (confirm('是否确认删除')){
+                 $.ajax({
+                     type:'post',
+                     url:'/toshop/index.php/admin/kind/alldelkind',
+                     data:'data='+data,
+                     dataType:'JSON',
+                     success(msg){
+                         if (msg == 1){
+                             $('#myModal').modal('show');
+                             $('.contents').text('删除成功');
+                             list.each(function (index,v) {
+                                 if (v.checked) {
+                                     v.parentElement.parentElement.style.display = "none";
+                                 }
+                             });
+                         } else {
+                             $('#myModal').modal('show');
+                             $('.contents').text('删除失败');
+                         }
+                     }
+                 });
+             }
+         })
+    })
+</script>

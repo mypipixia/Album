@@ -1,0 +1,199 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="/toshop/Public/Lib/js/jquery.mCustomScrollbar.min.css">
+    <link href="/toshop/Public/Lib/css/bootstrap.css" rel="stylesheet">
+    <link href="/toshop/Public/Home/css/user.css" rel="stylesheet">
+    <script src="/toshop/Public/Lib/js/jquery-1.10.2.min.js"></script>
+    <script src="/toshop/Public/Lib/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/toshop/Public/Lib/js/bootstrap.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+<div class="all">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="header-img">
+                        <img src="/toshop/Public/Home/images/index/logo.png" width="15%">
+                        <img src="/toshop/Public/Home/images/index/字.png" width="60%">
+                    </div>
+                </div>
+                <div class="col-xs-7">
+                    <form rel="search">
+                        <div class="input-group header-form ">
+                            <input class="form-control" autocomplete="off" id="seach">
+                            <span class="input-group-addon btns">
+                            <img src="/toshop/Public/Home/images/index/放大镜.png">
+                        </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="navs">
+                <nav class="navs-left">
+                    <a href="../Index/index.html">首页</a>
+                    <a href="../Shop/shop.html">商城</a>
+                    <a href="../Shop/hotshop.html">热卖</a>
+                    <a href="../Shop/statement.html">前往支付</a>
+                    <a href="../Shop/shopcar.html">
+                        我的购物车
+                        <img src="/toshop/Public/Home/images/index/车.png">
+                        <span class="label">(<?php echo ($num); ?>)</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container bg">
+        <div class="row">
+            <div class="col-xs-3 nav">
+                <div class="imgs" style="height: 150px">
+                    <?php if($user["headimg"] == null): ?><img src="/toshop/Public/Admin/images/user.png"/>
+                        <?php else: ?>
+                        <img src="/toshop/<?php echo ($user["headimg"]); ?>" class="img-circle"><?php endif; ?>
+                </div>
+                <p class="user-title">用户管理</p>
+                <a href="userinfo.html" class="list-group-item d active" target="my">用户信息</a>
+                <a href="userlogo.html" class="list-group-item d" target="my">头像设置</a>
+                <!--<a href="password.html" class="list-group-item d" target="my">密码设置</a>-->
+                <a href="register.html" class="list-group-item d" target="my">地址设置</a>
+                <p class="user-title">订单管理</p>
+                <a  href="notpay.html" class="list-group-item d" target="my">待付款</a>
+                <a href="paysend.html" class="list-group-item d" target="my">待发货</a>
+                <a href="send.html" class="list-group-item d" target="my">待收货</a>
+                <a href="isget.html" class="list-group-item d" target="my">评价</a>
+                <a  class="list-group-item">退款/售后</a>
+            </div>
+            <div class="col-xs-9" id="co">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="isget.html" name="my" data-mcs-theme="minimal-dark"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="/toshop/Public/Home/images/index/正品logo.png" width="17%">&nbsp;&nbsp;
+                        <span class="text-danger">100%</span>&nbsp;&nbsp;&nbsp;<span>正品保证</span>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="/toshop/Public/Home/images/index/七天logo.png"  width="17%">&nbsp;&nbsp;
+                        <span class="text-danger">7天</span>&nbsp;&nbsp;&nbsp;<span>无理由退换货</span>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="/toshop/Public/Home/images/index/客服logo.png"  width="20%">&nbsp;&nbsp;
+                        <span class="text-danger">咨询</span>&nbsp;&nbsp;&nbsp;<span>在线客服</span>
+                    </div>
+                    <div class="col-xs-2 col-xs-offset-4 text-right">
+                        <span>订阅我们</span>&nbsp;&nbsp;&nbsp;
+                        <img src="/toshop/Public/Home/images/index/email.png" width="17%">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-main">
+                <div class="cols">
+                    <ul>
+                        <li>新手专区</li>
+                        <li><a href="#">注册登录</a></li>
+                        <li><a href="#">购物结算</a></li>
+                        <li><a href="#">下单支付</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <ul>
+                        <li>会员中心</li>
+                        <li><a href="#">会员福利</a></li>
+                        <li><a href="#">账户管理</a></li>
+                        <li><a href="#">密码管理</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <ul>
+                        <li>购物指南</li>
+                        <li><a href="#">发票信息</a></li>
+                        <li><a href="#">尺码对照</a></li>
+                        <li><a href="#">商品咨询</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <ul>
+                        <li>支付方式</li>
+                        <li><a href="#">在线支付</a></li>
+                        <li><a href="#">货到付款</a></li>
+                        <li><a href="#">分期付款</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <ul>
+                        <li>配送方式</li>
+                        <li><a href="#">配送说明</a></li>
+                        <li><a href="#">运费说明</a></li>
+                        <li><a href="#">验货签收</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <ul>
+                        <li>售后与服务</li>
+                        <li><a href="#">退换货通道</a></li>
+                        <li><a href="#">投诉与建议</a></li>
+                        <li><a href="#">在线客服</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>"版权所有 本站内容未经书面许可,禁止一切形式的转载。 © copyright 2010-2017 福建帮帮科技有限公司. All rights reserved. 京ICP证160379号"</p>
+        </div>
+        <div class="ac">
+            <ul>
+                <li>
+                    <img src="/toshop/Public/Home/images/index/ac二维码.png" width="80%">
+                </li>
+                <li>
+                    <img src="/toshop/Public/Home/images/index/下载logo.png" width="14%">
+                    <span>下载APP</span>
+                </li>
+                <li>
+                    <img src="/toshop/Public/Home/images/index/微博.png" width="14%">
+                    <span>关注 Album Castle</span>
+                </li>
+                <li>
+                    <img src="/toshop/Public/Home/images/index/微信.png" width="14%">
+                    <span>订阅 Album Castle</span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
+<script>
+    $(function () {
+            $('.embed-responsive-item').attr('src',localStorage.src);
+            $('.d').each(function (i,e) {
+               if ( $('.d').eq(i).attr('href')==localStorage.src){
+                   $('.d').eq(i).addClass('active')
+               }else {
+                   $('.d').eq(i).removeClass('active')
+               }
+            });
+            $(".content").mCustomScrollbar();
+            $('.d').click(function () {
+                window.localStorage.src = $(this).attr('href');
+
+            });
+
+
+            $('.d').click(function () {
+                $('.d').removeClass('active');
+                $(this).addClass('active')
+            })
+    })
+</script>

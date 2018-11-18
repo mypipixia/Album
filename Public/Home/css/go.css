@@ -1,0 +1,34 @@
+.list-group-item>div{
+    font-size: 16px;
+}
+body{
+    margin: 10px;
+}
+[class*="col-"]{
+    height: 40px;
+    line-height: 40px;
+}
+.bag{
+    cursor: pointer;
+}
+.backs{
+    background: red;
+    color: white;
+}
+.le h3{
+    display: inline-block;
+    margin-right: 5%;
+}
+.le>h3>span{
+    font-size: 24px;
+}
+[name="numlist"]{
+    margin-top: 3px;
+    width: 60%;
+    margin-left: 20%;
+}
+.jie{
+    float: right;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}

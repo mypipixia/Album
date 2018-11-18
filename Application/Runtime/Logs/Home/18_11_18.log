@@ -1,0 +1,657 @@
+[ 2018-11-18T17:05:32+08:00 ] ::1 /toshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 ) ORDER BY uptime desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 and sales>300 ) ORDER BY uptime desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-18T17:06:27+08:00 ] ::1 /toshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 ) ORDER BY uptime desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 and sales>300 ) ORDER BY uptime desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-18T17:06:41+08:00 ] ::1 /toshop/index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 ) ORDER BY uptime desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 and sales>300 ) ORDER BY uptime desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-18T17:06:44+08:00 ] ::1 /toshop/index.php/home/inde
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Inde
+
+[ 2018-11-18T17:06:48+08:00 ] ::1 /toshop/index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 ) ORDER BY uptime desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 and sales>300 ) ORDER BY uptime desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-18T17:06:54+08:00 ] ::1 /toshop/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 ) ORDER BY uptime desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 and sales>300 ) ORDER BY uptime desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-18T17:06:59+08:00 ] ::1 /toshop/index.php/home/index/kind.html?rid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `actor` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ar` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ar` WHERE ( isrecommend=0 and rid=2 ) LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ar` WHERE ( isrecommend=1 and rid=2 ) LIMIT 0,32   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-18T17:07:00+08:00 ] ::1 /toshop/index.php/home/index/kind.html?rid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `actor` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ar` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ar` WHERE ( isrecommend=0 and rid=2 ) LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ar` WHERE ( isrecommend=1 and rid=2 ) LIMIT 0,32   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-18T17:07:03+08:00 ] ::1 /toshop/index.php/home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\ZhenziSmsClient::__construct(), called in D:\phpStudy\WWW\toshop\ThinkPHP\Common\functions.php on line 681 and defined D:\phpStudy\WWW\toshop\Application\Home\Controller\ZhenziSmsClient.class.php 第 10 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\ZhenziSmsClient::__construct(), called in D:\phpStudy\WWW\toshop\ThinkPHP\Common\functions.php on line 681 and defined D:\phpStudy\WWW\toshop\Application\Home\Controller\ZhenziSmsClient.class.php 第 10 行.
+NOTIC: [2] Missing argument 3 for Home\Controller\ZhenziSmsClient::__construct(), called in D:\phpStudy\WWW\toshop\ThinkPHP\Common\functions.php on line 681 and defined D:\phpStudy\WWW\toshop\Application\Home\Controller\ZhenziSmsClient.class.php 第 10 行.
+NOTIC: [8] Undefined variable: apiUrl D:\phpStudy\WWW\toshop\Application\Home\Controller\ZhenziSmsClient.class.php 第 11 行.
+NOTIC: [8] Undefined variable: appId D:\phpStudy\WWW\toshop\Application\Home\Controller\ZhenziSmsClient.class.php 第 12 行.
+NOTIC: [8] Undefined variable: appSecret D:\phpStudy\WWW\toshop\Application\Home\Controller\ZhenziSmsClient.class.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-18T17:07:11+08:00 ] ::1 /toshop/index.php/home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 ) ORDER BY uptime desc LIMIT 0,3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 and sales>300 ) ORDER BY uptime desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-18T17:07:14+08:00 ] ::1 /toshop/index.php/home/Shop/shopdetail.html?pid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\ShopController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\ShopController.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `prosize` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `psize` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `psize` WHERE ( pid=9 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `procolor` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `pcolor` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pcolor` WHERE ( pid=9 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-18T17:07:20+08:00 ] ::1 /toshop/index.php/home/Shop/shopcar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\ShopController.class.php 第 73 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-18T17:07:24+08:00 ] ::1 /toshop/index.php/home/Shop/hotshop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product` WHERE ( kid=27 and isshow=1 ) ORDER BY uptime desc LIMIT 0,6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( kid=28 and isshow=1 ) ORDER BY uptime desc LIMIT 0,6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 ) ORDER BY uptime desc LIMIT 0,6   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\ShopController.class.php 第 332 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\ShopController.class.php 第 333 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-18T17:07:36+08:00 ] ::1 /toshop/index.php/home/Shop/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\ShopController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\ShopController.class.php 第 33 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `pk` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pk` WHERE ( kid=29 and sales>300 ) ORDER BY uptime desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk` WHERE ( kid=29 ) ORDER BY uptime desc LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-18T17:07:41+08:00 ] ::1 /toshop/index.php/home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 ) ORDER BY uptime desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 and sales>300 ) ORDER BY uptime desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-18T17:07:46+08:00 ] ::1 /toshop/index.php/home/Shop/hotshop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product` WHERE ( kid=27 and isshow=1 ) ORDER BY uptime desc LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( kid=28 and isshow=1 ) ORDER BY uptime desc LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 ) ORDER BY uptime desc LIMIT 0,6   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\ShopController.class.php 第 332 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\ShopController.class.php 第 333 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-18T17:07:59+08:00 ] ::1 /toshop/index.php/home/Index/kind.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `actor` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ar` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ar` WHERE ( isrecommend=0 ) LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ar` WHERE ( isrecommend=1 ) LIMIT 0,32   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-18T17:08:02+08:00 ] ::1 /toshop/index.php/home/Details/details.html?aid=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\DetailsController.class.php 第 27 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\DetailsController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `actor` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `actor` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `actor` WHERE ( aid=25 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ap` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ap` WHERE ( isshow=1 and sales>300 and aid='25' ) ORDER BY uptime desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ap` WHERE ( aid='25' and isshow=1 and kid=35 ) ORDER BY uptime desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ap` WHERE ( aid='25' and isshow=1 and kid=27 ) ORDER BY uptime desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ap` WHERE ( aid='25' and isshow=1 and kid=28 ) ORDER BY uptime desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-18T17:08:07+08:00 ] ::1 /toshop/index.php/home/Shop/shopcar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\ShopController.class.php 第 73 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-18T17:08:22+08:00 ] ::1 /toshop/index.php/home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 ) ORDER BY uptime desc LIMIT 0,3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 and sales>300 ) ORDER BY uptime desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-18T17:08:41+08:00 ] ::1 /toshop/index.php/home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lunbo` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `kind` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `kind`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `region` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `region`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 ) ORDER BY uptime desc LIMIT 0,3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( kid=35 and isshow=1 and sales>300 ) ORDER BY uptime desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\toshop\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SELECT * FROM `lunbo` WHERE ( isshow=1 ) ORDER BY lid  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

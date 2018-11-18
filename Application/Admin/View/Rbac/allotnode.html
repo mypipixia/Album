@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>权限分配</title>
+    <link rel="stylesheet" href="__PUBLIC__/Lib/css/bootstrap.css">
+    <script src="__PUBLIC__/Lib/js/jquery-1.10.2.min.js"></script>
+    <script src="__PUBLIC__/Lib/js/bootstrap.min.js"></script>
+    <style>
+        .table th{
+            text-align: center;
+        }
+        .table tr{
+            cursor: pointer;
+        }
+        .table td{
+            text-align: center;
+        }
+        .table a:hover{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="panel">
+    <div class="panel-heading">
+        <button class="btn btn-info" id="allot">分配</button>
+        <a href="role.html" class="btn btn-danger">取消分配</a>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>
+                权限分配
+            </th>
+            <th>
+                权限名称
+            </th>
+            <th>
+                权限简介
+            </th>
+            <th>
+                权限等级
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="arr" id="vo">
+            <tr class="role">
+                <td>
+                    <input name="node" type="checkbox" value="{$vo.id}">
+                </td>
+                <if condition="$vo.level eq 1">
+                    <td width="13%" style="text-align: left">{$vo.name}</td>
+                    <elseif condition="$vo.level eq 2"/>
+                    <td width="13%" style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$vo.name}</td>
+                    <else/>
+                    <td width="13%" style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$vo.name}</td>
+                </if>
+                <td>
+                    {$vo.title}
+                </td>
+                <td>
+                    <if condition="$vo.level eq 1">
+                        模块
+                        <elseif condition="$vo.level eq 2"/>
+                        管理
+                        <else/>
+                        操作
+                    </if>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+    <input type="hidden" id="rules" value="{$rulelist}">
+    <input type="hidden" id="id" value="{$id}">
+</div>
+</body>
+</html>
+<script>
+    $(function () {
+        //点击选中
+        let id = $('#id').val();
+        $('#allot').click(function () {
+           let nodelist =  $('[name="node"]') ;
+           let rules = "";
+           nodelist.each(function (i,e) {
+               if (e.checked){
+                  rules = rules+','+e.value;
+               }
+           });
+            $.ajax({
+               type:'post',
+               url:'upnode',
+               data:'id='+id+'&rules='+rules,
+               success(msg){
+                   if (msg==1){
+                       alert('修改成功');
+                   } else {
+                     alert('修改失败')
+                   }
+               }
+           })
+
+        });
+
+
+        let rulelist = $('#rules').val();
+        $('.role').each(function (i,e) {
+            if (rulelist.indexOf(e.children[0].children[0].value)<0) {
+                this.children['0'].children['0'].checked = false;
+            }else {
+                e.children['0'].children['0'].checked = true;
+            }
+        });
+
+
+        $('.role').click(function () {
+            if ( this.children['0'].children['0'].checked) {
+                this.children['0'].children['0'].checked = false;
+            }else {
+                this.children['0'].children['0'].checked = true;
+            }
+         })
+    })
+</script>

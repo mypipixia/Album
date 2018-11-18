@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.error{
+    width: 100%;
+    position: relative;
+}
+.error{
+    padding-top: 20px;
+}
+.btn{
+    position: absolute;
+    bottom:6.5%;
+    right: 5%;
+    width: 180px;
+    height: 80px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
